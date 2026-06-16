@@ -1,0 +1,6 @@
+.env
+agent_config.yaml
+__pycache__/
+.venv/
+*.pyc
+.coverage

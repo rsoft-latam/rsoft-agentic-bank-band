@@ -1,0 +1,50 @@
+[BorrowerClient1] conectando a Band…
+2026-06-15 20:33:49,572 [BorrowerClient1] band.adapters.langgraph INFO LangGraph adapter started for agent: BorrowerClient1
+2026-06-15 20:33:49,589 [BorrowerClient1] band.runtime.runtime INFO Starting AgentRuntime for agent b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,481 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,674 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,674 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,674 [BorrowerClient1] band.platform.link INFO Connected to platform
+2026-06-15 20:33:50,674 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,872 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:50,872 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:51,093 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribing to topic: chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:51,287 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:51,288 [BorrowerClient1] band.client.streaming.client INFO [WebSocket] Subscribing to topic: room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:51,482 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:51,482 [BorrowerClient1] band.runtime.execution INFO Starting ExecutionContext for room: 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:51,490 [BorrowerClient1] band.runtime.presence INFO Subscribed to 1 rooms during startup
+2026-06-15 20:33:51,490 [BorrowerClient1] band.runtime.presence INFO RoomPresence started for agent b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 20:33:51,490 [BorrowerClient1] band.runtime.platform_runtime INFO Platform runtime started for agent: BorrowerClient1
+2026-06-15 20:33:51,490 [BorrowerClient1] band.agent INFO Agent started: BorrowerClient1 (band-sdk 1.0.0)
+2026-06-15 20:33:51,934 [BorrowerClient1] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Synchronized, switching to WebSocket
+2026-06-15 21:10:15,196 [BorrowerClient1] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 21:10:15,199 [BorrowerClient1] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 21:10:16,682 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 21:10:16,993 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 21:10:17,294 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:10:17,582 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:10:17,582 [BorrowerClient1] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 21:10:17,583 [BorrowerClient1] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 21:10:17,864 [BorrowerClient1] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 21:10:17,864 [BorrowerClient1] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect
+2026-06-15 22:02:59,366 [BorrowerClient1] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 22:02:59,369 [BorrowerClient1] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 22:03:00,580 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 22:03:00,775 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 22:03:00,979 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:03:01,176 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:03:01,177 [BorrowerClient1] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 22:03:01,177 [BorrowerClient1] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 22:03:01,546 [BorrowerClient1] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 22:03:01,546 [BorrowerClient1] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect
+2026-06-15 22:43:39,490 [BorrowerClient1] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 22:43:39,493 [BorrowerClient1] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 22:43:41,197 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 22:43:41,499 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:b3874e23-1948-4d6f-8e7b-a1536e17efba
+2026-06-15 22:43:41,825 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:43:42,121 [BorrowerClient1] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:43:42,122 [BorrowerClient1] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 22:43:42,124 [BorrowerClient1] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 22:43:42,995 [BorrowerClient1] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 22:43:42,995 [BorrowerClient1] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect
