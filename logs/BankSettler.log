@@ -1,0 +1,27 @@
+[BankSettler] conectando a Band…
+2026-06-15 20:33:41,587 [BankSettler] band.adapters.langgraph INFO LangGraph adapter started for agent: BankSettler
+2026-06-15 20:33:41,587 [BankSettler] band.runtime.runtime INFO Starting AgentRuntime for agent 777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,236 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_control:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,445 [BankSettler] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,445 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_control:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,445 [BankSettler] band.platform.link INFO Connected to platform
+2026-06-15 20:33:42,445 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_rooms:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,654 [BankSettler] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,655 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_rooms:777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:42,885 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribing to topic: chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:43,087 [BankSettler] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:43,087 [BankSettler] band.client.streaming.client INFO [WebSocket] Subscribing to topic: room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:43,292 [BankSettler] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:43,292 [BankSettler] band.runtime.execution INFO Starting ExecutionContext for room: 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:43,300 [BankSettler] band.runtime.presence INFO Subscribed to 1 rooms during startup
+2026-06-15 20:33:43,301 [BankSettler] band.runtime.presence INFO RoomPresence started for agent 777a1c70-7b62-493f-8f43-66381964a32e
+2026-06-15 20:33:43,301 [BankSettler] band.runtime.platform_runtime INFO Platform runtime started for agent: BankSettler
+2026-06-15 20:33:43,301 [BankSettler] band.agent INFO Agent started: BankSettler (band-sdk 1.0.0)
+2026-06-15 20:33:43,803 [BankSettler] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Synchronized, switching to WebSocket
+2026-06-15 20:37:02,027 [BankSettler] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Loading history...
+2026-06-15 20:37:02,028 [BankSettler] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Got 2 messages
+2026-06-15 20:37:02,030 [BankSettler] band.adapters.langgraph INFO [HANDLE] Message 85e42ad1-d696-416c-a647-4d8cd59444ae in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:37:04,888 [BankSettler] band.adapters.langgraph INFO [DONE] Message 85e42ad1-d696-416c-a647-4d8cd59444ae processed successfully
+2026-06-15 20:37:06,346 [BankSettler] band.adapters.langgraph INFO [HANDLE] Message 2a715632-b25e-4172-83f3-048d1893ecf3 in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:37:07,707 [BankSettler] openai._base_client INFO Retrying request to /chat/completions in 0.302000 seconds
+2026-06-15 20:38:18,349 [BankSettler] band.adapters.langgraph INFO [DONE] Message 2a715632-b25e-4172-83f3-048d1893ecf3 processed successfully

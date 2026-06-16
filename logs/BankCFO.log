@@ -1,0 +1,38 @@
+[BankCFO] conectando a Band…
+2026-06-15 20:33:37,444 [BankCFO] band.adapters.langgraph INFO LangGraph adapter started for agent: BankCFO
+2026-06-15 20:33:37,444 [BankCFO] band.runtime.runtime INFO Starting AgentRuntime for agent 6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,174 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_control:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,371 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,371 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_control:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,371 [BankCFO] band.platform.link INFO Connected to platform
+2026-06-15 20:33:38,371 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_rooms:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,574 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,575 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_rooms:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:38,790 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribing to topic: chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:38,991 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:38,991 [BankCFO] band.client.streaming.client INFO [WebSocket] Subscribing to topic: room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:39,194 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:39,194 [BankCFO] band.runtime.execution INFO Starting ExecutionContext for room: 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:39,203 [BankCFO] band.runtime.presence INFO Subscribed to 1 rooms during startup
+2026-06-15 20:33:39,203 [BankCFO] band.runtime.presence INFO RoomPresence started for agent 6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 20:33:39,203 [BankCFO] band.runtime.platform_runtime INFO Platform runtime started for agent: BankCFO
+2026-06-15 20:33:39,203 [BankCFO] band.agent INFO Agent started: BankCFO (band-sdk 1.0.0)
+2026-06-15 20:33:39,721 [BankCFO] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Synchronized, switching to WebSocket
+2026-06-15 20:36:56,784 [BankCFO] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Loading history...
+2026-06-15 20:36:56,785 [BankCFO] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Got 7 messages
+2026-06-15 20:36:56,791 [BankCFO] band.adapters.langgraph INFO [HANDLE] Message 50e8903f-682e-4df4-b432-e7c4f89ed849 in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:37:02,567 [BankCFO] band.adapters.langgraph INFO [DONE] Message 50e8903f-682e-4df4-b432-e7c4f89ed849 processed successfully
+2026-06-15 20:37:03,824 [BankCFO] band.adapters.langgraph INFO [HANDLE] Message f5f27b53-3586-454d-882b-6acba62e1d7f in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:37:07,884 [BankCFO] band.adapters.langgraph INFO [DONE] Message f5f27b53-3586-454d-882b-6acba62e1d7f processed successfully
+2026-06-15 20:38:17,723 [BankCFO] band.adapters.langgraph INFO [HANDLE] Message 3dee5785-26cf-4399-88f1-0e3daa576dbf in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:38:18,675 [BankCFO] band.adapters.langgraph INFO [DONE] Message 3dee5785-26cf-4399-88f1-0e3daa576dbf processed successfully
+2026-06-15 21:59:24,682 [BankCFO] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 21:59:24,688 [BankCFO] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 21:59:25,927 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 21:59:26,126 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:6c2b9f40-3ab1-4251-9279-47a91be37c65
+2026-06-15 21:59:26,320 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:59:26,517 [BankCFO] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:59:26,518 [BankCFO] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 21:59:26,520 [BankCFO] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 21:59:26,892 [BankCFO] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 21:59:26,892 [BankCFO] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect

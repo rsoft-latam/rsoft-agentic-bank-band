@@ -1,0 +1,44 @@
+[BankAnalyst] conectando a Band…
+2026-06-15 20:33:33,511 [BankAnalyst] band.adapters.langgraph INFO LangGraph adapter started for agent: BankAnalyst
+2026-06-15 20:33:33,511 [BankAnalyst] band.runtime.runtime INFO Starting AgentRuntime for agent 1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,192 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_control:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,386 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,386 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_control:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,386 [BankAnalyst] band.platform.link INFO Connected to platform
+2026-06-15 20:33:34,386 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribing to topic: agent_rooms:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,631 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,631 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribed to topic: agent_rooms:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:34,846 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribing to topic: chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:35,044 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:35,044 [BankAnalyst] band.client.streaming.client INFO [WebSocket] Subscribing to topic: room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:35,250 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:35,250 [BankAnalyst] band.runtime.execution INFO Starting ExecutionContext for room: 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:33:35,262 [BankAnalyst] band.runtime.presence INFO Subscribed to 1 rooms during startup
+2026-06-15 20:33:35,262 [BankAnalyst] band.runtime.presence INFO RoomPresence started for agent 1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 20:33:35,262 [BankAnalyst] band.runtime.platform_runtime INFO Platform runtime started for agent: BankAnalyst
+2026-06-15 20:33:35,262 [BankAnalyst] band.agent INFO Agent started: BankAnalyst (band-sdk 1.0.0)
+2026-06-15 20:33:35,710 [BankAnalyst] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Synchronized, switching to WebSocket
+2026-06-15 20:36:45,715 [BankAnalyst] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Loading history...
+2026-06-15 20:36:45,717 [BankAnalyst] band.preprocessing.default INFO Room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Got 4 messages
+2026-06-15 20:36:45,725 [BankAnalyst] band.adapters.langgraph INFO [HANDLE] Message 6b2d3d64-7fbd-41d7-b793-09c28f80bc00 in room 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 20:37:00,601 [BankAnalyst] band.adapters.langgraph INFO [DONE] Message 6b2d3d64-7fbd-41d7-b793-09c28f80bc00 processed successfully
+2026-06-15 21:05:03,583 [BankAnalyst] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 21:05:03,584 [BankAnalyst] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 21:05:04,781 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 21:05:04,976 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 21:05:05,186 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:05:05,386 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 21:05:05,387 [BankAnalyst] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 21:05:05,389 [BankAnalyst] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 21:05:05,799 [BankAnalyst] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 21:05:05,799 [BankAnalyst] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect
+2026-06-15 22:33:02,554 [BankAnalyst] phoenix_channels_python_client.client INFO Message routing stopped due to websocket close code=None reason=
+2026-06-15 22:33:02,559 [BankAnalyst] band.platform.link WARNING WebSocket disconnected: no close frame received or sent
+2026-06-15 22:33:03,870 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_control:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 22:33:04,081 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic agent_rooms:1745e40b-24eb-4a97-858a-429595941558
+2026-06-15 22:33:04,282 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic chat_room:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:33:04,501 [BankAnalyst] phoenix_channels_python_client.client INFO Successfully subscribed to topic room_participants:8bd5e798-ebb9-4230-9c86-bdc1b86a0d57
+2026-06-15 22:33:04,502 [BankAnalyst] band.platform.link INFO WebSocket reconnected — reconciling room state
+2026-06-15 22:33:04,504 [BankAnalyst] band.runtime.presence INFO Handling reconnection — syncing rooms from API
+2026-06-15 22:33:04,883 [BankAnalyst] band.runtime.execution INFO ExecutionContext 8bd5e798-ebb9-4230-9c86-bdc1b86a0d57: Reconnected, scheduling synchronization
+2026-06-15 22:33:04,884 [BankAnalyst] band.runtime.runtime INFO AgentRuntime: Requesting /next resync for 1 execution(s) after reconnect
