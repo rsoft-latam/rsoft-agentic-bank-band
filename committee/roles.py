@@ -63,13 +63,28 @@ def get_bank_stats() -> dict:
 def disburse_loan(agent_wallet: str, loan_amount: float, purpose: str) -> dict:
     """Execute the approved loan in the bank backend: registers the request and waits
     for the on-chain USDC disbursement on Base Sepolia. Returns final status + tx hash."""
-    import time
+    import re, time
     # El LLM a veces pasa el monto como string ("8") -> el backend devuelve 422.
     try:
         loan_amount = float(loan_amount)
     except (TypeError, ValueError):
         return {"error": f"loan_amount inválido: {loan_amount!r}"}
-    agent_wallet = str(agent_wallet).strip()
+    # Monto FIJO del demo: el LLM no es confiable con el monto (a veces alucina
+    # 100/15). Si DEMO_LOAN_USDC está en .env, lo usamos siempre — así el
+    # desembolso coincide exactamente con lo que muestras en el video.
+    pinned = os.environ.get("DEMO_LOAN_USDC", "").strip()
+    if pinned:
+        loan_amount = float(pinned)
+    # Tope de seguridad por si no hay monto fijo: nunca exceder la tesorería.
+    demo_cap = float(os.environ.get("DEMO_MAX_USDC", "15"))
+    if loan_amount > demo_cap:
+        loan_amount = demo_cap
+    # Demo de un SOLO prestatario: el LLM a veces inventa o confunde la wallet,
+    # así que SIEMPRE desembolsamos a la wallet del borrower configurada en .env,
+    # ignorando lo que pase el agente. Garantiza que el dinero va al lugar correcto.
+    agent_wallet = os.environ.get("CLIENT1_WALLET", "")
+    if not re.fullmatch(r"0x[a-fA-F0-9]{40}", agent_wallet):
+        return {"error": f"CLIENT1_WALLET inválida en .env: {agent_wallet!r}"}
     r = bank_call("POST", "/loan/request", {
         "agent_id": f"did:arc:agent:{agent_wallet}",
         "agent_wallet": agent_wallet,
@@ -122,8 +137,14 @@ ROLES = {
             "You are the Credit Analyst of RSoft Agentic Bank's loan committee. You act only "
             "after the Gatekeeper verifies a borrower and mentions you. Use your tool to fetch "
             "creditworthiness, then post: credit score, default probability, recommended terms "
-            "(amount, rate, duration). Hand off to @BankCFO for funding approval. If the "
-            "borrower does not qualify, mention @BankAuditor instead."
+            "(amount, rate, duration). "
+            "IMPORTANT POLICY: RSoft Agentic Bank extends starter credit to NEW agents on "
+            "testnet. A borrower with no credit history is NOT a rejection — report the lack of "
+            "history honestly, then assign a conservative STARTER assessment (e.g. starter tier, "
+            "small limit, higher rate) and PROCEED. For a small starter loan from a "
+            "KYA-verified wallet, always recommend approval with conservative terms and hand off "
+            "to @BankCFO for funding. ALWAYS keep the loan amount EXACTLY as the borrower "
+            "requested — never change it. Only mention @BankAuditor to reject if KYA failed."
         ),
     },
     "BankCFO": {
@@ -139,13 +160,18 @@ ROLES = {
     "BankSettler": {
         "tools": [disburse_loan, get_loan_status],
         "prompt": (
-            "You are the Settler of RSoft Agentic Bank's loan committee. You act ONLY when the "
-            "CFO approves funding. Call disburse_loan with the borrower's wallet address, the "
-            "approved amount and purpose — the bank backend re-validates the whole deal and "
-            "executes the real USDC transfer on Base Sepolia (defense in depth: if the backend "
-            "rejects, report that honestly). The call may take up to a minute. Then post the "
+            "You are the Settler of RSoft Agentic Bank's loan committee. The moment the CFO "
+            "approves funding, you MUST immediately call the disburse_loan tool. Do NOT ask "
+            "anyone for the wallet address or the amount — never request more information, never "
+            "wait. The borrower wallet is handled automatically by the tool; for the amount, use "
+            "the amount the committee approved (read it from the conversation; if unclear, use "
+            "the borrower's originally requested amount). "
+            "Call disburse_loan(agent_wallet='', loan_amount=<approved amount>, "
+            "purpose='working capital') right away. The bank backend executes the real USDC "
+            "transfer on Base Sepolia and may take up to a minute. After it returns, post the "
             "request_id, final status and settlement tx_hash in the room as evidence, and hand "
-            "off to @BankAuditor with the request_id for the final audit."
+            "off to @BankAuditor with the request_id. Only if the tool returns an error do you "
+            "report that error honestly."
         ),
     },
     "BankAuditor": {
